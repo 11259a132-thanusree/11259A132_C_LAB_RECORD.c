@@ -1,0 +1,224 @@
+PROGRAM 4 : Problem in Looping Statements
+
+**AIM**
+
+To write a C program that calculates the sum of the first n natural numbers using a for loop.
+
+**ALGORITHM** :
+
+Start the program.
+
+Declare variables n, sum = 0.
+
+Ask the user to enter the value of n.
+
+Read the input using scanf.
+
+Use a for loop from i = 1 to i <= n.
+
+Add each value of i to sum.
+
+After the loop ends, display the final sum.
+
+End the program.
+
+**PROGRAM ** :
+
+#include <stdio.h>
+int main() {
+int n, sum = 0;
+printf("Enter n: ");
+scanf("%d", &n);
+for(int i = 1; i <= n; i++)
+sum += i;
+printf("Sum of series = %d\n", sum);
+return 0;
+}
+
+
+**SAMPLE OUTPUT** :
+
+Enter n: 5
+
+Sum of series = 15
+
+**FINAL RESULT**
+
+The program successfully computes the sum of the first n natural numbers using a for loop
+
+(ii) Sum of Series Using While Loop
+
+**AIM**
+
+To write a C program to compute the sum of the first n natural numbers using a while loop.
+
+**ALGORITHM**
+
+Start the program.
+
+Declare variables n, i = 1, and sum = 0.
+
+Ask the user to enter a number n.
+
+Use a while loop that runs while i <= n.
+
+Add i to sum and increment i by 1 each time.
+
+After the loop is complete, display the sum.
+
+End the program.
+
+
+**PROGRAM ** :
+
+#include <stdio.h>
+int main() {
+int n, i = 1, sum = 0;
+printf("Enter n: ");
+scanf("%d", &n);
+while(i <= n) {
+sum += i;
+i++;
+}
+printf("Sum of series = %d\n", sum);
+return 0;
+}
+
+**SAMPLE OUTPUT**
+
+Enter n: 6
+Sum of series = 21
+
+**FINAL RESULT** :
+
+The program correctly calculates the sum of the series using a while loop.
+
+
+
+(iii) Fibonacci Series
+**AIM** :
+
+To develop a C program that prints the Fibonacci series up to n terms.
+
+**ALGORITHM** :
+
+Start the program.
+
+Declare variables n, a = 0, b = 1, and next.
+
+Ask the user to enter the number of terms.
+
+Loop from 1 to n:
+
+Print the current value of a.
+
+Calculate next = a + b.
+
+Update: a = b, b = next.
+
+End the program.
+
+
+**PROGRAM ** :
+
+
+#include <stdio.h>
+int main() {
+int n, a = 0, b = 1, next;
+printf("Enter number of terms: ");
+scanf("%d", &n);
+printf("Fibonacci Series: ");
+for(int i = 1; i <= n; i++) {
+printf("%d ", a);
+next = a + b;
+a = b;
+b = next;
+}
+return 0;
+}
+
+**SAMPLE OUTPUT** :
+
+Enter number of terms: 7
+
+Fibonacci Series: 0 1 1 2 3 5 8
+
+**FINAL RESULT** :
+
+The program correctly generates and prints the Fibonacci sequence for the given number of terms.
+
+
+
+(iv) Check Prime Number
+**AIM** :
+
+To write a C program to check whether a given number is prime or not.
+
+**ALGORITHM** :
+
+Start the program.
+
+Declare variables n and flag = 0.
+
+Take input n from the user.
+
+Run a loop from i = 2 to n/2.
+
+If n % i == 0, set flag = 1 and break the loop.
+
+After the loop:
+
+If flag == 0, the number is prime.
+
+Else, it is not prime.
+
+End the program.
+
+
+
+**PROGRAM** : 
+
+#include <stdio.h>
+int main() {
+int n, flag = 0;
+printf("Enter a number: ");
+scanf("%d", &n);
+for(int i = 2; i <= n/2; i++) {
+if(n % i == 0) {
+flag = 1;
+break;
+}
+}
+if(flag == 0)
+printf("%d is a Prime number\n", n);
+else
+printf("%d is not a Prime number\n", n);
+return 0;
+}
+
+
+**SAMPLE OUTPUT** : 
+
+Enter a number: 29
+
+29 is a Prime number
+
+**FINAL RESULT**
+
+The program successfully determines whether the input number is prime.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

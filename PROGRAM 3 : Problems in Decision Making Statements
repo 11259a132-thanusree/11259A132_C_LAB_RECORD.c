@@ -1,0 +1,182 @@
+Problems in Decision Making Statements
+
+(i) Find the Biggest Among 3 Numbers
+
+AIM :
+
+To develop a C program that reads three numbers from the user and determines the largest among them using decision-making statements (if-else).
+
+ALGORITHM :
+
+Start the program.
+
+Declare three variables: a, b, and c.
+
+Ask the user to input three numbers.
+
+Use scanf to read the numbers.
+
+Compare the numbers using:
+
+If a >= b AND a >= c, then a is the largest.
+
+Else if b >= a AND b >= c, then b is the largest.
+
+Else c is the largest.
+
+Display the largest number.
+
+End the program.
+
+
+** PROGRAM ** :
+
+
+#include <stdio.h>
+int main() {
+int a, b, c;
+printf("Enter three numbers: ");
+scanf("%d %d %d", &a, &b, &c);
+if(a >= b && a >= c)
+printf("%d is the largest\n", a);
+else if(b >= a && b >= c)
+printf("%d is the largest\n", b);
+else
+printf("%d is the largest\n", c);
+return 0;
+}
+
+**SAMPLE OUTPUT**
+
+Enter three numbers: 15 9 22
+
+22 is the largest
+
+**FINAL RESULT**
+
+The program successfully identifies and displays the largest of the three input numbers.
+
+
+
+(ii) Find Even or Odd
+
+**AIM**
+
+To write a C program that checks whether a given integer is even or odd using the modulus (%) operator.
+
+**ALGORITHM**
+
+Start the program.
+
+Declare an integer variable num.
+
+Ask the user to enter a number.
+
+Read the input using scanf.
+
+Check if num % 2 == 0:
+
+If true, print that the number is even.
+
+Otherwise, print that it is odd.
+
+End the program.
+
+
+** PROGRAM ** :
+#include <stdio.h>
+int main() {
+int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+if(num % 2 == 0)
+printf("%d is Even\n", num);
+else
+printf("%d is Odd\n", num);
+return 0;
+}
+
+**SAMPLE OUTPUT**
+
+Enter a number: 17
+17 is Odd
+
+FINAL RESULT
+
+The program correctly determines whether a user-entered number is even or odd.
+
+The program correctly performs the arithmetic operation selected by the user using switch-case
+
+
+
+(iii) Arithmetic Operations using Switch Case
+
+AIM
+
+To write a C program that performs one of the arithmetic operations (addition, subtraction, multiplication, division) based on the user’s choice using the switch-case statement.
+
+ALGORITHM
+
+Start the program.
+
+Declare variables a, b, and choice.
+
+Ask the user to enter two numbers.
+
+Display a menu with four arithmetic operation choices.
+
+Read the user's choice.
+
+Use a switch statement:
+
+Case 1: Add the numbers.
+
+Case 2: Subtract second from first.
+
+Case 3: Multiply the numbers.
+
+Case 4: Divide first by second (typecast to float).
+
+Default: Print an invalid choice message.
+
+Display the result.
+
+End the program.
+
+Program :
+
+#include <stdio.h>
+int main() {
+int a, b, choice;
+printf("Enter two numbers: ");
+scanf("%d %d", &a, &b);
+printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n");
+printf("Enter your choice: ");
+scanf("%d", &choice);
+switch(choice) {
+case 1: printf("Sum = %d\n", a + b); break;
+case 2: printf("Difference = %d\n", a - b); break;
+case 3: printf("Product = %d\n", a * b); break;
+case 4: printf("Quotient = %.2f\n", (float)a / b); break;
+default: printf("Invalid choice\n");
+}
+return 0;
+}
+
+
+SAMPLE OUTPUT
+
+
+Enter two numbers: 20 5
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+Enter your choice: 4
+Quotient = 4.00
+
+FINAL RESULT
+
+The program correctly performs the arithmetic operation selected by the user using switch-case
+
+

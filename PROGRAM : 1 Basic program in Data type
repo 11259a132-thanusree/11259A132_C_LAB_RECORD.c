@@ -1,0 +1,42 @@
+ ** PROGRAM 1 : 1. Basic Programs in Data Types **
+
+**Aim:**
+To understand and demonstrate the use of basic data types in C.
+
+
+**Algorithm:**
+• Start the program.
+• Declare variables of different data types.
+• Display values using printf().
+• Stop the program.
+
+
+
+**Program:**
+#include <stdio.h>
+int main() {
+ int a = 10; float b = 5.5; char c = 'A'; double d = 123.456789;
+ printf("Integer: %d\n", a);
+ printf("Float: %.2f\n", b);
+ printf("Character: %c\n", c);
+ printf("Double: %.3lf\n", d);
+ return 0;
+}
+
+
+**Output :**
+Integer: 10
+Float: 5.50
+Character: A
+Double: 123.457
+
+
+**Result :**
+
+Integer prints as 10
+
+Float prints with 2 decimal places: 5.50
+
+Character prints as A
+
+Double prints with 3 decimal places: 123.457

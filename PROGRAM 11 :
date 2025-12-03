@@ -1,0 +1,56 @@
+Factorial Using Recursion
+**AIM** :
+
+To write a C program that calculates the factorial of a given number using a recursive function.
+
+**ALGORITHM **
+
+Function: fact(n)
+
+If n == 0, return 1.
+
+Otherwise, return n * fact(n - 1).
+
+Main Program
+
+Start the program.
+
+Declare an integer variable n.
+
+Ask the user to enter a number.
+
+Read the value of n.
+
+Call the recursive function fact(n) to compute the factorial.
+
+Display the result.
+
+End the program.
+
+
+**PROGRAM :**
+
+#include <stdio.h>
+int fact(int n) {
+if (n == 0)
+return 1;
+return n * fact(n - 1);
+}
+int main() {
+int n;
+printf("Enter a number: ");
+scanf("%d", &n);
+printf("Factorial = %d\n", fact(n));
+return 0;
+}
+
+
+** SAMPLE OUTPUT ** :
+
+Enter a number: 5
+
+Factorial = 120
+
+** FINAL RESULT **
+
+The program successfully calculates the factorial of a number using recursion, where the function repeatedly calls itself until reaching the base condition (n == 0).
